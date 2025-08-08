@@ -1,0 +1,1 @@
+console.log('TheNewEra – Website läuft!');
