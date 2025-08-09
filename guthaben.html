@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guthabenbereich – TheNewEra</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="TheNewEra Logo"><span>TheNewEra</span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menü umschalten">☰</button>
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="pakete.html">Pakete</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="kundenbereich.html" id="nav-user">Kundenbereich</a>
+    <a href="support.html">Support</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="admin.html" id="nav-admin" class="hidden">Adminbereich</a>
+  </nav>
+</header>
+<main class="container">
+
+<h1>Guthabenbereich</h1>
+<div class="grid2">
+  <div class="card">
+    <h2>Dein aktuelles Guthaben</h2>
+    <p class="kpi-num" id="balance-amount">€ 0,00</p>
+    <div class="actions">
+      <button class="btn" data-topup="10">+ €10 aufladen</button>
+      <button class="btn" data-topup="25">+ €25 aufladen</button>
+      <button class="btn" data-topup="50">+ €50 aufladen</button>
+      <button class="btn ghost" id="reset-balance">Zurücksetzen</button>
+    </div>
+    <p class="tiny subtle">Demo – im Livesystem läuft Aufladung über Zahlungsanbieter.</p>
+  </div>
+  <div class="card">
+    <h2>Transaktionen</h2>
+    <ul id="tx-list" class="list"></ul>
+  </div>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <strong>TheNewEra OG</strong><br>
+      Musterstraße 1, 1010 Wien<br>
+      kontakt@thenewera.at
+    </div>
+    <div class="footer-links">
+      <a href="agb.html">AGB</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+  <p class="copy">© 2025 TheNewEra OG – Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>

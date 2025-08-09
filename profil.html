@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil bearbeiten – TheNewEra</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="TheNewEra Logo"><span>TheNewEra</span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Menü umschalten">☰</button>
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="pakete.html">Pakete</a>
+    <a href="ueber-uns.html">Über uns</a>
+    <a href="kundenbereich.html" id="nav-user">Kundenbereich</a>
+    <a href="support.html">Support</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="admin.html" id="nav-admin" class="hidden">Adminbereich</a>
+  </nav>
+</header>
+<main class="container">
+
+<h1>Profil bearbeiten</h1>
+<p class="subtle">Hier kannst du deine Kontodaten und Präferenzen anpassen. (Demo – Daten werden lokal im Browser gespeichert.)</p>
+
+<form id="profile-form" class="card">
+  <h2>Kontodaten</h2>
+  <div class="grid2">
+    <label>Benutzername<input name="username" required></label>
+    <label>E‑Mail<input type="email" name="email" required></label>
+    <label>Vorname<input name="firstName"></label>
+    <label>Nachname<input name="lastName"></label>
+    <label>Land
+      <select name="country">
+        <option value="AT">Österreich</option>
+        <option value="DE">Deutschland</option>
+        <option value="CH">Schweiz</option>
+        <option value="other">Anderes</option>
+      </select>
+    </label>
+    <label>Zeitzone
+      <select name="tz">
+        <option value="Europe/Vienna">Europe/Vienna (CET/CEST)</option>
+        <option value="Europe/Berlin">Europe/Berlin</option>
+        <option value="UTC">UTC</option>
+      </select>
+    </label>
+  </div>
+
+  <h2>Präferenzen</h2>
+  <div class="grid2">
+    <label><input type="checkbox" name="pref_football"> Fußball</label>
+    <label><input type="checkbox" name="pref_tennis"> Tennis</label>
+    <label><input type="checkbox" name="pref_basketball"> Basketball</label>
+    <label><input type="checkbox" name="pref_icehockey"> Eishockey</label>
+    <label><input type="checkbox" name="pref_tabletennis"> Tischtennis</label>
+  </div>
+
+  <h2>Benachrichtigungen</h2>
+  <div class="grid2">
+    <label><input type="checkbox" name="notify_tips"> Tipps per E‑Mail</label>
+    <label><input type="checkbox" name="notify_news"> Newsletter</label>
+    <label><input type="checkbox" name="notify_security"> Sicherheitsmeldungen</label>
+  </div>
+
+  <h2>Passwort ändern (Demo)</h2>
+  <div class="grid2">
+    <label>Neues Passwort<input type="password" name="newPassword" minlength="6" placeholder="mind. 6 Zeichen"></label>
+    <label>Neues Passwort wiederholen<input type="password" name="newPassword2" minlength="6"></label>
+  </div>
+  <p class="tiny subtle">In der Demo wird kein echtes Passwort gespeichert. Im Livesystem werden Passwörter gehasht.</p>
+
+  <div class="actions">
+    <button class="btn" type="submit">Speichern</button>
+    <a class="btn ghost" href="kundenbereich.html">Zurück</a>
+  </div>
+</form>
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <strong>TheNewEra OG</strong><br>
+      Musterstraße 1, 1010 Wien<br>
+      kontakt@thenewera.at
+    </div>
+    <div class="footer-links">
+      <a href="agb.html">AGB</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+  </div>
+  <p class="copy">© 2025 TheNewEra OG – Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>
