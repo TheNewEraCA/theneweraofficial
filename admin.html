@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home – TheNewEra</title>
+  <title>Admin – TheNewEra</title>
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
@@ -25,16 +25,32 @@
 </header>
 <main class="container">
 
-<section class="hero">
-  <h1>Die neue Ära der Sportwetten</h1>
-  <p>Analysen & Statistiken für Fußball, Tennis – bald mehr. Transparent. Strukturiert. Nachhaltig.</p>
-  <a class="btn" href="pakete.html">Pakete ansehen</a>
+<h1>Admin-Dashboard</h1>
+<section class="kpis">
+  <div class="kpi"><div class="kpi-num" id="kpi-users">152</div><div class="kpi-label">Registrierte User</div></div>
+  <div class="kpi"><div class="kpi-num" id="kpi-new">8</div><div class="kpi-label">Neue User (7T)</div></div>
+  <div class="kpi"><div class="kpi-num" id="kpi-active">217</div><div class="kpi-label">Aktive Pakete</div></div>
+  <div class="kpi"><div class="kpi-num" id="kpi-tickets">3</div><div class="kpi-label">Offene Tickets</div></div>
 </section>
-<section class="features">
-  <article class="feature"><h3>Datengetriebene Analysen</h3><p>Value-Bets durch Quotenvergleiche & Formkurven.</p></article>
-  <article class="feature"><h3>Klare Strategien</h3><p>Bankroll-Management & Systemwetten.</p></article>
-  <article class="feature"><h3>Europe Focus</h3><p>Schwerpunkt: europäische Fußballligen.</p></article>
+<section class="charts">
+  <div class="chart-card"><h3>Registrierungen (30 Tage)</h3><canvas id="regChart" width="600" height="260"></canvas></div>
+  <div class="chart-card"><h3>Paketverteilung</h3><canvas id="pkgChart" width="600" height="260"></canvas></div>
 </section>
+<section class="admin-actions">
+  <h2>Kundenverwaltung</h2>
+  <div class="table-wrap">
+    <table class="table" id="userTable">
+      <thead><tr><th>Benutzername</th><th>E‑Mail</th><th>Pakete</th><th>Status</th><th>Aktionen</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <h2>Support-Anfragen</h2>
+  <ul id="tickets" class="list"></ul>
+</section>
+<div class="actions">
+  <button id="admin-logout" class="btn warn">Admin-Logout</button>
+  <button id="toggle-view" class="btn ghost">Testmodus: User/Admin umschalten</button>
+</div>
 
 </main>
 <footer class="footer">

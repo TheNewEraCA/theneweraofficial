@@ -12,13 +12,15 @@
   <a class="brand" href="index.html">
     <img src="assets/logo.png" alt="TheNewEra Logo"><span>TheNewEra</span>
   </a>
-  <nav class="nav">
+  <button class="hamburger" id="hamburger" aria-label="Menü umschalten">☰</button>
+  <nav class="nav" id="nav">
     <a href="index.html">Home</a>
     <a href="pakete.html">Pakete</a>
     <a href="ueber-uns.html">Über uns</a>
     <a href="kundenbereich.html" id="nav-user">Kundenbereich</a>
     <a href="support.html">Support</a>
     <a href="impressum.html">Impressum</a>
+    <a href="admin.html" id="nav-admin" class="hidden">Adminbereich</a>
   </nav>
 </header>
 <main class="container">
@@ -43,7 +45,10 @@
 </div>
 <div id="dashboard" class="hidden">
   <div class="card">
-    <h2>Willkommen, <span id="user-name"></span>!</h2>
+    <div class="dash-head">
+      <h2>Willkommen, <span id="user-name"></span>!</h2>
+      <button id="test-toggle" class="btn ghost hidden">Testmodus umschalten</button>
+    </div>
     <p>Deine aktiven Pakete:</p>
     <ul id="user-packages" class="list"></ul>
     <div class="actions">
@@ -63,7 +68,9 @@
 <footer class="footer">
   <div class="footer-grid">
     <div>
-      <strong>TheNewEra OG</strong><br>Musterstraße 1, 1010 Wien<br>kontakt@thenewera.at
+      <strong>TheNewEra OG</strong><br>
+      Musterstraße 1, 1010 Wien<br>
+      kontakt@thenewera.at
     </div>
     <div class="footer-links">
       <a href="agb.html">AGB</a>
